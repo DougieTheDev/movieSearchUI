@@ -1,4 +1,4 @@
-🎬 Movie Search with TMDB & Wikipedia APIs
+🎬 Movie Search w/ TMDB & Wikipedia APIs
 
 A simple yet fun project where users can search for any movie title, and the app will fetch detailed information using two different APIs: [TheMovieDB (TMDB)](https://www.themoviedb.org/) and [Wikipedia](https://www.wikipedia.org/). First, it fetches movie data like release date, overview, and rating from TMDB, and then passes the movie title to the Wikipedia API to pull in a summary or article snippet.
 
