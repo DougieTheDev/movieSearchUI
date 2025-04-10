@@ -1,0 +1,226 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); 
+    padding: 0;
+    margin: 0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+input {
+    padding: 14px;
+    font-size: 1.2rem;
+    width: 60%;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+
+.movie-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transform: scale(0.98);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: 2px solid #eee;
+}
+
+.movie-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.movie-card h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.movie-card p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.movie-card button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.movie-card button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.movie-card .rating {
+    font-size: 1.2rem;
+    color: #f39c12;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.movie-card .genre {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.movie-details {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    color: #333;
+}
+
+.movie-details p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.movie-details a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.movie-details a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
