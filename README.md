@@ -31,7 +31,7 @@ This project was a lot of fun and gave me a confidence boost with working direct
 
 ## 📸 Screenshot
 
-![App Screenshot](img/1.png)
+![App Screenshot](img/2.png)
 
 ## 🚀 How to Run
 
