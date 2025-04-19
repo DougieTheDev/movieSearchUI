@@ -15,7 +15,7 @@ A simple yet fun project where users can search for any movie title, and the app
 1. **User Input**: You enter a movie name into a search field.
 2. **API Call #1**: The app fetches movie details from TheMovieDB.
 3. **API Call #2**: It then uses the movie title to request a summary from Wikipedia.
-4. **Display**: Both sets of data (from TMDB and Wikipedia) are displayed side by side in a clean layout.
+4. **Display**: Both sets of data (from TMDB and Wikipedia) are displayed stacked in a clean layout.
 
 ## 📚 What I Learned
 
